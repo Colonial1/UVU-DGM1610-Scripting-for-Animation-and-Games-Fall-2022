@@ -18,7 +18,9 @@ public class SpawnManager : MonoBehaviour
         InvokeRepeating("SpawnRandomBalloon", startDelay, spawnInterval);
     }
 
-    void SpawnRandomBalloons()
+  
+
+    void SpawnRandomBalloon()
     {
         // Get a random position on the x-axis
         Vector3 spawnPosx = new Vector3(Random.Range(-xRange,xRange),0,0);
